@@ -24,11 +24,7 @@ class Php54Amqp < Formula
   def caveats; <<-EOS.undent
     To finish installing php54-amqp:
       * Add the following lines to #{etc}/php.ini:
-<<<<<<< HEAD
         [amqp]
-=======
-        [mongo]
->>>>>>> 0eb52f0b4e518424afc25c6fc5e3e3063a645f11
         extension="#{prefix}/amqp.so"
       * Restart your webserver.
       * Write a PHP page that calls "phpinfo();"
